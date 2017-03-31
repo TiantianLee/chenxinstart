@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.WgGrEnyMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.WgGrEny" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" property="xm" jdbcType="VARCHAR" />
+    <result column="GMSFHM" property="gmsfhm" jdbcType="VARCHAR" />
+    <result column="XB" property="xb" jdbcType="VARCHAR" />
+    <result column="CSRQ" property="csrq" jdbcType="VARCHAR" />
+    <result column="SJHM" property="sjhm" jdbcType="VARCHAR" />
+    <result column="HYZK" property="hyzk" jdbcType="VARCHAR" />
+    <result column="DZ" property="dz" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="findByXmGmsfhm" resultType="WgGrEny" resultMap="BaseResultMap">
+   select * from wg_gr_eny where xm=#{xm} and GMSFHM=#{gmsfhm}  AND ROWNUM=1
+  </select>
+</mapper>

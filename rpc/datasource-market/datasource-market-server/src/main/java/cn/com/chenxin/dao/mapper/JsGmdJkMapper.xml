@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JsGmdJkMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsGmdJk" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" property="xm" jdbcType="VARCHAR" />
+    <result column="GMSFHM" property="gmsfhm" jdbcType="VARCHAR" />
+    <result column="JKRQ" property="jkrq" jdbcType="TIMESTAMP" />
+    <result column="JKJE" property="jkje" jdbcType="DECIMAL" />
+    <result column="JKZQ" property="jkzq" jdbcType="VARCHAR" />
+    <result column="SHJG" property="shjg" jdbcType="VARCHAR" />
+    <result column="ZSRQ" property="zsrq" jdbcType="TIMESTAMP" />
+    <result column="QYRQ" property="qyrq" jdbcType="TIMESTAMP" />
+    <result column="SQCS" property="sqcs" jdbcType="VARCHAR" />
+    <result column="XXLY" property="xxly" jdbcType="VARCHAR" />
+    <result column="LYFL" property="lyfl" jdbcType="VARCHAR" />
+    <result column="CJRQ" property="cjrq" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

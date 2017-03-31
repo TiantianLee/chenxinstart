@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JtBank.JsHgTest100Mapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JtBank.JsHgTest100" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="INPUTE_DATE" property="inputeDate" jdbcType="DATE" />
+    <result column="ENT_NAME" property="entName" jdbcType="VARCHAR" />
+    <result column="ENT_CONTACT" property="entContact" jdbcType="VARCHAR" />
+    <result column="ENT_TEL" property="entTel" jdbcType="VARCHAR" />
+    <result column="CONSIGNOR_CODE" property="consignorCode" jdbcType="VARCHAR" />
+    <result column="CONSIGNOR_CNAME" property="consignorCname" jdbcType="VARCHAR" />
+    <result column="CONSIGNOR_ENAME" property="consignorEname" jdbcType="VARCHAR" />
+    <result column="CONSIGNEE_CODE" property="consigneeCode" jdbcType="VARCHAR" />
+    <result column="CONSIGNEE_CNAME" property="consigneeCname" jdbcType="VARCHAR" />
+    <result column="CONSIGNEE_ENAME" property="consigneeEname" jdbcType="VARCHAR" />
+    <result column="TRANS_TYPE_CODE" property="transTypeCode" jdbcType="VARCHAR" />
+    <result column="TRANS_TYPE_NAME" property="transTypeName" jdbcType="VARCHAR" />
+    <result column="GOODS_PLACE" property="goodsPlace" jdbcType="VARCHAR" />
+    <result column="TRADE_MODE_CODE" property="tradeModeCode" jdbcType="VARCHAR" />
+    <result column="TRADE_MODE_NAME" property="tradeModeName" jdbcType="VARCHAR" />
+    <result column="DESP_PORT_CODE" property="despPortCode" jdbcType="VARCHAR" />
+    <result column="DESP_PORT_NAME" property="despPortName" jdbcType="VARCHAR" />
+    <result column="ARRI_PORT_CODE" property="arriPortCode" jdbcType="VARCHAR" />
+    <result column="ARRI_PORT_NAME" property="arriPortName" jdbcType="VARCHAR" />
+    <result column="ENTRY_PORT_CODE" property="entryPortCode" jdbcType="VARCHAR" />
+    <result column="ENTRY_PORT_NAME" property="entryPortName" jdbcType="VARCHAR" />
+    <result column="DEST_CODE" property="destCode" jdbcType="VARCHAR" />
+    <result column="DEST_NAME" property="destName" jdbcType="VARCHAR" />
+    <result column="TRADE_COUNTRY_CODE" property="tradeCountryCode" jdbcType="VARCHAR" />
+    <result column="TRADE_COUNTRY_NAME" property="tradeCountryName" jdbcType="VARCHAR" />
+    <result column="DESP_COUNTRY_CODE" property="despCountryCode" jdbcType="VARCHAR" />
+    <result column="DESP_COUNTRY_NAME" property="despCountryName" jdbcType="VARCHAR" />
+    <result column="CONTRACT_NO" property="contractNo" jdbcType="VARCHAR" />
+    <result column="PROD_REG_NO" property="prodRegNo" jdbcType="VARCHAR" />
+    <result column="PROD_CNAME" property="prodCname" jdbcType="VARCHAR" />
+    <result column="PROD_CONTACT" property="prodContact" jdbcType="VARCHAR" />
+    <result column="PROD_TEL" property="prodTel" jdbcType="VARCHAR" />
+    <result column="HS_CODE" property="hsCode" jdbcType="VARCHAR" />
+    <result column="GOODS_CNAME" property="goodsCname" jdbcType="VARCHAR" />
+    <result column="GOODS_ENAME" property="goodsEname" jdbcType="VARCHAR" />
+    <result column="GOODS_MODEL" property="goodsModel" jdbcType="VARCHAR" />
+    <result column="ORIGIN_PLACE_CODE" property="originPlaceCode" jdbcType="VARCHAR" />
+    <result column="ORIGIN_PLACE_NAME" property="originPlaceName" jdbcType="VARCHAR" />
+    <result column="ORIGIN_COUNTRY_CODE" property="originCountryCode" jdbcType="VARCHAR" />
+    <result column="ORIGIN_COUNTRY_NAME" property="originCountryName" jdbcType="VARCHAR" />
+    <result column="QTY" property="qty" jdbcType="DECIMAL" />
+    <result column="QTY_UNIT_CODE" property="qtyUnitCode" jdbcType="VARCHAR" />
+    <result column="QTY_UNIT_NAME" property="qtyUnitName" jdbcType="VARCHAR" />
+    <result column="WEIGHT" property="weight" jdbcType="DECIMAL" />
+    <result column="WEIGHT_UNIT_CODE" property="weightUnitCode" jdbcType="VARCHAR" />
+    <result column="WEIGHT_UNIT_NAME" property="weightUnitName" jdbcType="VARCHAR" />
+    <result column="GOODS_UNIT_PRICE" property="goodsUnitPrice" jdbcType="DECIMAL" />
+    <result column="GOODS_TOTAL_VALUES" property="goodsTotalValues" jdbcType="DECIMAL" />
+    <result column="CURR_UNIT" property="currUnit" jdbcType="VARCHAR" />
+    <result column="CURR_UNIT_NAME" property="currUnitName" jdbcType="VARCHAR" />
+    <result column="PACK_NUMBER" property="packNumber" jdbcType="DECIMAL" />
+    <result column="PACK_TYPE_CODE" property="packTypeCode" jdbcType="VARCHAR" />
+    <result column="PACK_TYPE_NAME" property="packTypeName" jdbcType="VARCHAR" />
+    <result column="STD_QUANTITY" property="stdQuantity" jdbcType="DECIMAL" />
+    <result column="STD_UNIT_CODE" property="stdUnitCode" jdbcType="VARCHAR" />
+    <result column="STD_UNIT_NAME" property="stdUnitName" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

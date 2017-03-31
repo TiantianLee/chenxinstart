@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration
+    xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender
+        name="CONSOLE"
+        class="org.apache.log4j.ConsoleAppender">
+        <param
+            name="Threshold"
+            value="ALL" />
+        <layout
+            class="org.apache.log4j.PatternLayout">
+            <param
+                name="ConversionPattern"
+                value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] %m%n" />
+        </layout>
+    </appender>
+
+	<appender
+        name="FILE"
+        class="org.apache.log4j.rolling.RollingFileAppender">
+        <rollingPolicy
+            class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param
+                name="FileNamePattern"
+                value="${catalina.home}/logs/userws-%d.log" />
+        </rollingPolicy>
+        <layout
+            class="org.apache.log4j.PatternLayout">
+            <param
+                name="ConversionPattern"
+                value="%5p %d{ISO8601} [%t][%x] [%c] - %m%n" />
+        </layout>
+    </appender>
+     <!-- 发邮件（只有ERROR时才会发送！） -->  
+	 <appender name="MAIL"  
+	  class="org.apache.log4j.net.SMTPAppender">  
+	  <param name="threshold" value="debug" />  
+	  <!-- 日志的错误级别  
+	   <param name="threshold" value="fatal"/>  
+	  -->  
+	  <!-- 缓存文件大小，日志达到512K时发送Email -->  
+	  <param name="BufferSize" value="10" /><!-- 单位K -->  
+	  <param name="From" value="ccsp@bjchenrui.com" />  
+	  <param name="SMTPHost" value="smtp.exmail.qq.com" />  
+	  <param name="Subject" value="Error-Message" />  
+	  <param name="To" value="xiaolong@bjchenrui.com,jiangqi@bjchenrui.com,liyang@bjchenrui.com" />  
+	  <param name="SMTPUsername" value="ccsp@bjchenrui.com" />  
+	  <param name="SMTPPassword" value="chenRui_123!@#" />  
+	  <param name="SMTPDebug" value="false" />  
+	  <layout class="org.apache.log4j.PatternLayout">  
+	   <param name="ConversionPattern"  
+	    value="%-d{yyyy-MM-dd HH:mm:ss.SSS} [%p]-[%c] %m%n" />  
+	  </layout>  
+	 </appender>  
+    <logger
+        name="cn.com.chenxin"
+        additivity="false">
+        <appender-ref
+            ref="CONSOLE" />
+        <appender-ref
+            ref="FILE" />
+             <appender-ref
+            ref="MAIL" />
+    </logger>
+    
+		
+
+    <logger
+        name="java.sql.PreparedStatement"
+        additivity="false">
+        <appender-ref
+            ref="CONSOLE" />
+        <appender-ref
+            ref="FILE" />
+             <appender-ref
+            ref="MAIL" />
+    </logger>
+
+    <root>
+        <level
+            value="INFO" />
+        <appender-ref
+            ref="CONSOLE" />
+        <appender-ref
+            ref="FILE" />
+        <appender-ref
+            ref="MAIL" />
+    </root>
+
+</log4j:configuration>

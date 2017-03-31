@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.ZxFoodDrugFoodproductQsMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.ZxFoodDrugFoodproductQs" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="VC_CODE" property="vcCode" jdbcType="VARCHAR" />
+    <result column="VC_NAME" property="vcName" jdbcType="VARCHAR" />
+    <result column="VC_PRODUCTER" property="vcProducter" jdbcType="VARCHAR" />
+    <result column="VC_ZHUSUO" property="vcZhusuo" jdbcType="VARCHAR" />
+    <result column="VC_PEODUCTADDRESS" property="vcPeoductaddress" jdbcType="VARCHAR" />
+    <result column="VC_JAINYANFANGSHI" property="vcJainyanfangshi" jdbcType="VARCHAR" />
+    <result column="VC_STARTTIME" property="vcStarttime" jdbcType="VARCHAR" />
+    <result column="VC_ENDTIME" property="vcEndtime" jdbcType="VARCHAR" />
+    <result column="VC_OFFICE" property="vcOffice" jdbcType="VARCHAR" />
+    <result column="VC_ORIGIN" property="vcOrigin" jdbcType="VARCHAR" />
+    <result column="VC_URL" property="vcUrl" jdbcType="VARCHAR" />
+    <result column="VC_TIME" property="vcTime" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

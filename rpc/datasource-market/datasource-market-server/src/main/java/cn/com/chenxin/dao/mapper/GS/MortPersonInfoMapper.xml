@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.GS.MortPersonInfoMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.GS.MortPersonInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="MORE_ID" property="moreId" jdbcType="VARCHAR" />
+    <result column="MORREG_ID" property="morregId" jdbcType="VARCHAR" />
+    <result column="PRIPID" property="pripid" jdbcType="VARCHAR" />
+    <result column="MORE" property="more" jdbcType="VARCHAR" />
+    <result column="BLICTYPE" property="blictype" jdbcType="VARCHAR" />
+    <result column="BLICNO" property="blicno" jdbcType="VARCHAR" />
+    <result column="MOR_LOC" property="morLoc" jdbcType="VARCHAR" />
+    <result column="S_EXT_NODENUM" property="sExtNodenum" jdbcType="VARCHAR" />
+    <result column="S_EXT_TIMESTAMP" property="sExtTimestamp" jdbcType="DATE" />
+    <result column="S_EXT_BATCH" property="sExtBatch" jdbcType="VARCHAR" />
+    <result column="S_EXT_SEQUENCE" property="sExtSequence" jdbcType="VARCHAR" />
+    <result column="S_EXT_VALIDFLAG" property="sExtValidflag" jdbcType="VARCHAR" />
+    <result column="S_EXT_ICODE" property="sExtIcode" jdbcType="VARCHAR" />
+    <result column="S_EXT_CODETIME" property="sExtCodetime" jdbcType="DATE" />
+    <result column="S_EXT_OCODE" property="sExtOcode" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.chenxin.dao.ExpTbMapper">
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.ExpTb">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" jdbcType="VARCHAR" property="xm" />
+    <result column="DZ" jdbcType="VARCHAR" property="dz" />
+    <result column="DHHM" jdbcType="VARCHAR" property="dhhm" />
+    <result column="SJHM" jdbcType="VARCHAR" property="sjhm" />
+    <result column="SF" jdbcType="VARCHAR" property="sf" />
+    <result column="CS" jdbcType="VARCHAR" property="cs" />
+    <result column="DQ" jdbcType="VARCHAR" property="dq" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="GMSFHM" jdbcType="VARCHAR" property="gmsfhm" />
+  </resultMap>
+</mapper>

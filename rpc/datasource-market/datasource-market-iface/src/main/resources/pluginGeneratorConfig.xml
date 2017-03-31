@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="config.properties"/>
+
+    <context id="Oracle" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="${mapper.plugin}">
+          <property name="mappers" value="${mapper.Mapper}"/>
+        </plugin>
+
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.user}"
+                        password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="cn.com.chenxin.model"
+			targetProject="G:\zhengxin\code\platform\logcenter\log-db\src\main\java\" />
+		<sqlMapGenerator targetPackage="cn.com.chenxin.dao.mapper"
+			targetProject="G:\zhengxin\code\platform\logcenter\log-db\src\main\java\" />
+		<javaClientGenerator
+			targetPackage="cn.com.chenxin.dao"
+            targetProject="G:\zhengxin\code\platform\logcenter\log-db\src\main\java\" type="XMLMAPPER" />
+		
+        <table tableName="LOG_%" >
+          <generatedKey column="id" sqlStatement="Oracle" identity="false"/>
+        </table>
+    </context>
+</generatorConfiguration>

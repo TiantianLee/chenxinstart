@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.chenxin.dao.JsHmdGrsxXMapper">
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsHmdGrsxX">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" jdbcType="VARCHAR" property="xm" />
+    <result column="GMSFHM" jdbcType="VARCHAR" property="gmsfhm" />
+    <result column="ZXFY" jdbcType="VARCHAR" property="zxfy" />
+    <result column="SF" jdbcType="VARCHAR" property="sf" />
+    <result column="AH" jdbcType="VARCHAR" property="ah" />
+    <result column="LXQK" jdbcType="VARCHAR" property="lxqk" />
+    <result column="JTQK" jdbcType="VARCHAR" property="jtqk" />
+    <result column="FBRQ" jdbcType="DATE" property="fbrq" />
+    <result column="LARQ" jdbcType="DATE" property="larq" />
+    <result column="YYNR" jdbcType="VARCHAR" property="yynr" />
+    <result column="YYSJ" jdbcType="DATE" property="yysj" />
+    <result column="FXLB" jdbcType="VARCHAR" property="fxlb" />
+    <result column="XXLY" jdbcType="VARCHAR" property="xxly" />
+    <result column="CJRQ" jdbcType="DATE" property="cjrq" />
+  </resultMap>
+  
+  <select id="queryGrsxX" resultType="Integer">
+  	select 1 from js_hmd_grsx_x t where instr(t.xm,#{xm})&gt;0 and t.xm is not null AND ROWNUM=1
+  </select>
+  <select id="hmdCxService4queryGrsxX" resultType="Integer">
+  	select 1 from js_hmd_grsx_x t where instr(t.xm,#{xm})&gt;0 and t.gmsfhm=substr(#{gmsfhm},1,10)||'****'||substr(#{gmsfhm},15,4) and t.xm is not null and t.gmsfhm is not null AND ROWNUM=1
+  </select>
+</mapper>

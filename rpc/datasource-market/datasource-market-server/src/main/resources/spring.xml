@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+">  
+
+	<!-- 引入属性文件 -->
+	<bean id="propertyConfig" class="cn.com.chenxin.configration.PropertyPlaceholderConfigurerExt">
+		<property name="locations">
+			<list>
+				<value>classpath:env.properties</value>
+			</list>
+		</property>
+	</bean>
+    <context:component-scan base-package="cn.com.chenxin.service" />  
+      <bean class="cn.com.chenxin.bean.MsgReceiverInitBean" />
+      
+      <bean id="jyycService" name="jyycService"  class="cn.com.chenxin.service.JyycService" />
+      <bean id="hmdCxServiceByNameAndCode" name="hmdCxServiceByNameAndCode"  class="cn.com.chenxin.service.hmd.HmdCxServiceByNameAndCode" />
+      <bean id="hmdCxServiceByPhoneAndName" name="hmdCxServiceByPhoneAndName"  class="cn.com.chenxin.service.hmd.HmdCxServiceByPhoneAndName" />
+      <bean id="basicService" name="basicService"  class="cn.com.chenxin.service.basic.BasicService" />
+      
+      <bean id="marketinitBean" class="cn.com.chenxin.bean.ServerInitBean"></bean>
+      
+      <bean id="sfhcCxService" class="cn.com.chenxin.service.sfhc.SfhcCxService"></bean>
+      
+      <bean id="fullInfoService" name="fullInfoService" class="cn.com.chenxin.service.fullInfo.FullInfoService"></bean>
+      
+      <bean id="fullInfoAService" name="fullInfoAService" class="cn.com.chenxin.service.fullInfo.FullInfoAService"></bean>
+      <bean id="fullInfoA2Service" name="fullInfoA2Service" class="cn.com.chenxin.service.fullInfo.FullInfoA2Service"></bean>
+   
+    <bean id="foodProductService" name="foodProductService" class="cn.com.chenxin.service.food.FoodProductService"></bean>
+    <bean id="fullInfoTBService" name="fullInfoCService" class="cn.com.chenxin.service.fullInfo.FullInfoTBService"></bean>
+
+  	<bean id="carSearchService" name="carSearchService" class="cn.com.chenxin.service.JtBank.car.CarSearchService"></bean>
+	<bean id="customsDataService" name="customsDataService" class="cn.com.chenxin.service.JtBank.hg.CustomsDataService"></bean>
+	<bean id="houseSerchService" name="houseSerchService" class="cn.com.chenxin.service.JtBank.house.HouseSerchService"></bean>
+	
+	
+		<bean id="corporateInvestmentService" name="corporateInvestmentService" class="cn.com.chenxin.service.gs.CorporateInvestmentService"></bean>
+	
+		<bean id="chattelMortgageService" name="chattelMortgageService" class="cn.com.chenxin.service.gs.ChattelMortgageService"></bean>
+	
+	
+
+</beans>  
+
+
+
+
+
+
+
+
+
+
+

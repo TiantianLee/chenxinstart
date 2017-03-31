@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.chenxin.dao.JsQyzxJyycMapper">
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsQyzxJyyc">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="QYMC" jdbcType="VARCHAR" property="qymc" />
+    <result column="YYZZZCH" jdbcType="VARCHAR" property="yyzzzch" />
+    <result column="LRYY" jdbcType="VARCHAR" property="lryy" />
+    <result column="LRRQ" jdbcType="DATE" property="lrrq" />
+    <result column="LRJG" jdbcType="VARCHAR" property="lrjg" />
+    <result column="YCYY" jdbcType="VARCHAR" property="ycyy" />
+    <result column="YCRQ" jdbcType="DATE" property="ycrq" />
+    <result column="YCJG" jdbcType="VARCHAR" property="ycjg" />
+    <result column="LYID" jdbcType="DECIMAL" property="lyid" />
+    <result column="CJRQ" jdbcType="DATE" property="cjrq" />
+  </resultMap>
+</mapper>

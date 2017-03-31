@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JtBank.JsJdcTest100Mapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JtBank.JsJdcTest100" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="CZ" property="cz" jdbcType="VARCHAR" />
+    <result column="SBMC" property="sbmc" jdbcType="VARCHAR" />
+    <result column="HPHM" property="hphm" jdbcType="VARCHAR" />
+    <result column="CLXH" property="clxh" jdbcType="VARCHAR" />
+    <result column="HPZL" property="hpzl" jdbcType="VARCHAR" />
+    <result column="DWGR" property="dwgr" jdbcType="VARCHAR" />
+    <result column="CLLX" property="cllx" jdbcType="VARCHAR" />
+    <result column="CJHM" property="cjhm" jdbcType="VARCHAR" />
+    <result column="CLZT" property="clzt" jdbcType="VARCHAR" />
+    <result column="CSYS" property="csys" jdbcType="VARCHAR" />
+    <result column="CCRQ" property="ccrq" jdbcType="DATE" />
+    <result column="DJRQ" property="djrq" jdbcType="DATE" />
+    <result column="GMSFHM" property="gmsfhm" jdbcType="VARCHAR" />
+    <result column="ZJLX" property="zjlx" jdbcType="VARCHAR" />
+    <result column="SJHM" property="sjhm" jdbcType="VARCHAR" />
+    <result column="SJHM_O" property="sjhmO" jdbcType="VARCHAR" />
+    <result column="QTHM" property="qthm" jdbcType="VARCHAR" />
+    <result column="DHHM" property="dhhm" jdbcType="VARCHAR" />
+    <result column="DZ" property="dz" jdbcType="VARCHAR" />
+    <result column="FDJH" property="fdjh" jdbcType="VARCHAR" />
+    <result column="FDJXH" property="fdjxh" jdbcType="VARCHAR" />
+    <result column="GCJK" property="gcjk" jdbcType="VARCHAR" />
+    <result column="SYXZ" property="syxz" jdbcType="VARCHAR" />
+    <result column="XZQH" property="xzqh" jdbcType="VARCHAR" />
+    <result column="YZBM" property="yzbm" jdbcType="VARCHAR" />
+    <result column="ZBZL" property="zbzl" jdbcType="DECIMAL" />
+    <result column="ZZCS" property="zzcs" jdbcType="VARCHAR" />
+    <result column="ZZGJ" property="zzgj" jdbcType="VARCHAR" />
+    <result column="ZZL" property="zzl" jdbcType="DECIMAL" />
+    <result column="PJ" property="pj" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

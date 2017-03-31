@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JsSfhcXmGmsfhmMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsSfhcXmGmsfhm" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" property="xm" jdbcType="VARCHAR" />
+    <result column="GMSFHM" property="gmsfhm" jdbcType="VARCHAR" />
+    <result column="CJRQ" property="cjrq" jdbcType="DATE" />
+  </resultMap>
+  
+  <select id="sfhcCxService1QueryXmGmsfhm" resultType="Integer">
+  	select 1 from js_sfhc_xm_gmsfhm t where t.xm = #{xm} and t.gmsfhm = #{gmsfhm} AND ROWNUM=1
+  </select>
+  <select id="sfhcCxService1QueryGmsfhm" resultType="Integer">
+  	select 1 from js_sfhc_xm_gmsfhm t where t.gmsfhm = #{gmsfhm} AND ROWNUM=1
+  </select>
+</mapper>

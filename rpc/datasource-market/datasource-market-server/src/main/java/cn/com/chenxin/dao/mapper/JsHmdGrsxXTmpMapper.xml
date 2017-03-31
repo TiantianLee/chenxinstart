@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JsHmdGrsxXTmpMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsHmdGrsxXTmp" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" property="xm" jdbcType="VARCHAR" />
+    <result column="GMSFHM" property="gmsfhm" jdbcType="VARCHAR" />
+    <result column="SF" property="sf" jdbcType="VARCHAR" />
+    <result column="CS" property="cs" jdbcType="VARCHAR" />
+    <result column="LARQ" property="larq" jdbcType="DATE" />
+    <result column="FBRQ" property="fbrq" jdbcType="DATE" />
+    <result column="JLZQ" property="jlzq" jdbcType="DECIMAL" />
+    <result column="ZXFY" property="zxfy" jdbcType="VARCHAR" />
+    <result column="ZXWH" property="zxwh" jdbcType="VARCHAR" />
+    <result column="AH" property="ah" jdbcType="VARCHAR" />
+    <result column="LXQK" property="lxqk" jdbcType="VARCHAR" />
+    <result column="YLX" property="ylx" jdbcType="VARCHAR" />
+    <result column="YLXJE" property="ylxje" jdbcType="DECIMAL" />
+    <result column="WLX" property="wlx" jdbcType="VARCHAR" />
+    <result column="WLXJE" property="wlxje" jdbcType="DECIMAL" />
+    <result column="JTQK" property="jtqk" jdbcType="VARCHAR" />
+    <result column="FXLB" property="fxlb" jdbcType="VARCHAR" />
+    <result column="XXLY" property="xxly" jdbcType="VARCHAR" />
+    <result column="LYFL" property="lyfl" jdbcType="VARCHAR" />
+    <result column="CJRQ" property="cjrq" jdbcType="DATE" />
+  </resultMap>
+  
+  <!-- <select id="hmdCxService1queryGrsxX" resultType="Integer">
+  	select 1 from js_hmd_grsx_x_tmp t where t.gmsfhm=substr(#{gmsfhm},1,10)||'****'||substr(#{gmsfhm},15,4) and t.gmsfhm is not null AND ROWNUM=1
+  </select> -->
+  <select id="hmdCxService4queryGrsxX" resultType="JsHmdGrsxXTmp" resultMap="BaseResultMap">
+  	select t.sf,t.larq,t.fbrq,t.zxfy,t.zxwh,t.ah,t.lxqk,t.ylx,t.wlx,t.jtqk from js_hmd_grsx_x_tmp t where instr(t.xm,#{xm})&gt;0 and t.gmsfhm=substr(#{gmsfhm},1,10)||'****'||substr(#{gmsfhm},15,4) and t.xm is not null and t.gmsfhm is not null AND ROWNUM=1
+  </select>
+</mapper>

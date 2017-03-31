@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JsHmdWdMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsHmdWd" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="XM" property="xm" jdbcType="VARCHAR" />
+    <result column="GMSFHM" property="gmsfhm" jdbcType="VARCHAR" />
+    <result column="SJHM" property="sjhm" jdbcType="VARCHAR" />
+    <result column="JKRQ" property="jkrq" jdbcType="DATE" />
+    <result column="JKQS" property="jkqs" jdbcType="VARCHAR" />
+    <result column="YQRQ" property="yqrq" jdbcType="DATE" />
+    <result column="ZDYQTS" property="zdyqts" jdbcType="DECIMAL" />
+    <result column="FXLB" property="fxlb" jdbcType="VARCHAR" />
+    <result column="DKLX" property="dklx" jdbcType="VARCHAR" />
+    <result column="XXLY" property="xxly" jdbcType="VARCHAR" />
+    <result column="LYFL" property="lyfl" jdbcType="VARCHAR" />
+    <result column="CJRQ" property="cjrq" jdbcType="DATE" />
+    <result column="FBRQ" property="fbrq" jdbcType="DATE" />
+  </resultMap>
+  
+  <select id="hmdCxService2queryWd" resultType="Integer">
+  	select 1 from js_hmd_wd t where t.sjhm = #{sjhm} and t.sjhm is not null AND ROWNUM=1
+  </select>
+   <select id="queryWd" resultType="Integer">
+  	select 1 from js_hmd_wd t where t.xm = #{xm} and t.xm is not null and t.sjhm = #{sjhm} and t.sjhm is not null AND ROWNUM=1
+  </select>
+  <select id="hmdCxService4queryWd" resultType="Integer">
+  	select 1 from js_hmd_wd t where t.xm = #{xm} and t.gmsfhm = #{gmsfhm} and t.xm is not null and t.gmsfhm is not null AND ROWNUM=1
+  </select>
+</mapper>

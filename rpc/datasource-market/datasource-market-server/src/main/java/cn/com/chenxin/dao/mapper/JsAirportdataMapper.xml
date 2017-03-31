@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.JsAirportdataMapper">
+	<resultMap id="BaseResultMap" type="cn.com.chenxin.model.JsAirportdata">
+		<!-- WARNING - @mbggenerated -->
+		<result column="MSGTYPE" property="msgtype" jdbcType="VARCHAR" />
+		<result column="IP" property="ip" jdbcType="VARCHAR" />
+		<result column="MAC" property="mac" jdbcType="VARCHAR" />
+		<result column="VLANNO" property="vlanno" jdbcType="VARCHAR" />
+		<result column="USERNAME" property="username" jdbcType="VARCHAR" />
+		<result column="IDTYPE" property="idtype" jdbcType="VARCHAR" />
+		<result column="IDNUM" property="idnum" jdbcType="VARCHAR" />
+		<result column="USERID" property="userid" jdbcType="VARCHAR" />
+		<result column="VISITTIME" property="visittime" jdbcType="DATE" />
+		<result column="IDTYPESTRING" property="idtypestring" jdbcType="VARCHAR" />
+		<result column="MSGTYPESTRING" property="msgtypestring"
+			jdbcType="VARCHAR" />
+		<result column="ID" property="id" jdbcType="DECIMAL" />
+		<result column="CREATETIME" property="createtime" jdbcType="DATE" />
+		<result column="IPINT" property="ipint" jdbcType="DECIMAL" />
+		<result column="OFFTIME" property="offtime" jdbcType="DATE" />
+		<result column="REMOTEIP" property="remoteip" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="getMacBySjhm" resultMap="BaseResultMap" resultType="cn.com.chenxin.model.JsAirportdata">
+		select t.* from JS_AIRPORTDATA t where t.idnum =
+		#{sjhm}
+		and
+		t.idtypestring = 'mI8zmnd7aso4TEQEZNHcHg==' and t.createtime >=
+		add_months(sysdate,-1)
+	</select>
+
+	<select id="getMacByIdCard" resultMap="BaseResultMap"
+		resultType="cn.com.chenxin.model.JsAirportdata">
+		select t.* from JS_AIRPORTDATA t where t.idnum =
+		#{gmsfhm}
+		and t.idtypestring = '6eZQv9yckphxjYO0LEjAOA==' and t.createtime >=
+		add_months(sysdate,-1)
+	</select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.chenxin.dao.GS.ESharesTransferMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.chenxin.model.GS.ESharesTransfer" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="S_EXT_NODENUM" property="sExtNodenum" jdbcType="VARCHAR" />
+    <result column="PRIPID" property="pripid" jdbcType="VARCHAR" />
+    <result column="TRA_ID" property="traId" jdbcType="VARCHAR" />
+    <result column="ALIENID" property="alienid" jdbcType="VARCHAR" />
+    <result column="ALIEN" property="alien" jdbcType="VARCHAR" />
+    <result column="CERTYPE" property="certype" jdbcType="VARCHAR" />
+    <result column="CERNO" property="cerno" jdbcType="VARCHAR" />
+    <result column="TRANAM" property="tranam" jdbcType="VARCHAR" />
+    <result column="TRANAMPR" property="tranampr" jdbcType="VARCHAR" />
+    <result column="TRANDATE" property="trandate" jdbcType="VARCHAR" />
+    <result column="TRANTYPE" property="trantype" jdbcType="VARCHAR" />
+    <result column="S_EXT_TIMESTAMP" property="sExtTimestamp" jdbcType="DATE" />
+    <result column="S_EXT_BATCH" property="sExtBatch" jdbcType="VARCHAR" />
+    <result column="S_EXT_SEQUENCE" property="sExtSequence" jdbcType="VARCHAR" />
+    <result column="S_EXT_VALIDFLAG" property="sExtValidflag" jdbcType="VARCHAR" />
+    <result column="INVID" property="invid" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
