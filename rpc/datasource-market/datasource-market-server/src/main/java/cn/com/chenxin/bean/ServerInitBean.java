@@ -1,5 +1,5 @@
-/**    
-* @author LIYANG  
+﻿/**    
+* @author 
 * @date 2016年3月23日 上午10:36:14 
 * @version V1.0   
 */
@@ -14,7 +14,7 @@ import cn.com.chenxin.pool.threadpool.ThreadPool;
 /**
  * 初始化account-server基础配置
  * 
- * @author LIYANG
+ * @author 
  *
  * @since 
  */

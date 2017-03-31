@@ -1,7 +1,7 @@
 '''
 Created on 2016-3-16
 
-@author: LIYANG
+@author: tiantian
 '''
 import os
 dir = os.getcwd()

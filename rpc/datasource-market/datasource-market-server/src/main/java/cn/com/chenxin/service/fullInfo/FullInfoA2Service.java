@@ -1,5 +1,5 @@
-/**    
-* @author LIYANG  
+﻿/**    
+* @author   
 * @date 2016年4月26日 上午11:35:08 
 * @version V1.0   
 */
@@ -25,7 +25,7 @@ import com.alibaba.fastjson.JSONObject;
 
 /**
  * 
- * @author LIYANG
+ * @author 
  *
  * @since 
  */
@@ -41,7 +41,7 @@ public class FullInfoA2Service {
     @Autowired
     private FullInfoTBService fullInfoTBService;
     
-    private String key = "ccsp!@#$";
+    private String key = "xxxx";
     
     /**
      * 根据条件查询全量信息

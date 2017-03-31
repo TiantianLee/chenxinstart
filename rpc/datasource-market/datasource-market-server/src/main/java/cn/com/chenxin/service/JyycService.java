@@ -1,4 +1,4 @@
-package cn.com.chenxin.service;
+﻿package cn.com.chenxin.service;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import cn.com.chenxin.model.JsQyzxJyyc;
 /**
  * 经营异常
  * 
- * @author lxl
+ * @author tiantian
  * @since 0.0.2-SNAPSHOT
  */
 @Service

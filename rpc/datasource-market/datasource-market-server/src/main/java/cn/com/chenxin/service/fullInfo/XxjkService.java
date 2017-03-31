@@ -1,5 +1,5 @@
-/**    
-* @author LIYANG  
+﻿/**    
+* @author tiantian
 * @date 2016年5月4日 下午3:06:57 
 * @version V1.0   
 */
@@ -21,7 +21,7 @@ import cn.com.chenxin.model.JsXxjk;
 
 /**
  * 
- * @author LIYANG
+ * @author tiantian
  *
  * @since 
  */

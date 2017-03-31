@@ -1,4 +1,4 @@
-package cn.com.chenxin.bean;
+﻿package cn.com.chenxin.bean;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.InitializingBean;
@@ -8,7 +8,7 @@ import cn.com.chenxin.message.pool.ActiveMQConnectionPool;
 /**
  * 初始化mq连接
  * 
- * @author lxl
+ * @author 
  * @since 0.0.2-SNAPSHOT
  */
 public class MsgReceiverInitBean implements InitializingBean {
@@ -20,7 +20,7 @@ public class MsgReceiverInitBean implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        LOGGER.info("初始化jyycService mq连接");
+        LOGGER.info("初始化j mq连接");
         String url = System.getProperty("LogMQServerURL");
         ActiveMQConnectionPool.initFactory(null, null, url, 5, 100);
     }

@@ -1,5 +1,5 @@
-/**   
-* 北京宸信征信有限公司  版权所有
+﻿/**   
+*  版权所有
 * @Title: BasicService.java 
 * @Package cn.com.chenxin.service.basic 
 * @Description: TODO(用一句话描述该文件做什么) 
@@ -40,7 +40,7 @@ public class BasicService implements Iface {
     /* (non-Javadoc)
      * @see cn.com.chenxin.iface.DatasourceMarketBasicThrift.Iface#findBasicByNameAndCode(cn.com.chenxin.iface.LogInfo, java.lang.String)
      */
-    private String key = "ccsp!@#$";
+    private String key = "xxxx";
     private String isSuccess = "1";
     @Override
     /**

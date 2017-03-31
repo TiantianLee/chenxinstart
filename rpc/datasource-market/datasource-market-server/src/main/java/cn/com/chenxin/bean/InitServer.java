@@ -1,5 +1,5 @@
-/**    
- * @author LIYANG  
+﻿/**    
+ * @author   
  * @date 2016年3月23日 上午11:28:15 
  * @version V1.0   
  */
@@ -37,7 +37,7 @@ import cn.com.chenxin.service.sfhc.SfhcCXApi;
 
 /**
  * 
- * @author LIYANG
+ * @author 
  *
  * @since
  */

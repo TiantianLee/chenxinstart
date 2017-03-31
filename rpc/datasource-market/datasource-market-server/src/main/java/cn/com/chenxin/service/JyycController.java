@@ -1,4 +1,4 @@
-package cn.com.chenxin.service;
+﻿package cn.com.chenxin.service;
 
 import java.util.List;
 import java.util.UUID;
@@ -20,7 +20,7 @@ import com.alibaba.fastjson.JSONObject;
 /**
  * 经营异常
  * 
- * @author lxl
+ * @author tiantian
  * @since 0.0.2-SNAPSHOT
  */
 
