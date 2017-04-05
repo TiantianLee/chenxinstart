@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration
+    xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender
+        name="CONSOLE"
+        class="org.apache.log4j.ConsoleAppender">
+        <param
+            name="Threshold"
+            value="ALL" />
+        <layout
+            class="org.apache.log4j.PatternLayout">
+            <param
+                name="ConversionPattern"
+                value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] %m%n" />
+        </layout>
+    </appender>
+
+	<appender
+        name="FILE"
+        class="org.apache.log4j.rolling.RollingFileAppender">
+        <rollingPolicy
+            class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param
+                name="FileNamePattern"
+                value="${catalina.home}/logs/CAF-%d.log" />
+        </rollingPolicy>
+        <layout
+            class="org.apache.log4j.PatternLayout">
+            <param
+                name="ConversionPattern"
+                value="%5p %d{ISO8601} [%t][%x] [%c] - %m%n" />
+        </layout>
+    </appender>
+    
+    <logger
+        name="cn.com.chenxin"
+        additivity="false">
+        <level
+            value="${log.level}" />
+        <appender-ref
+            ref="CONSOLE" />
+        <appender-ref
+            ref="FILE" />
+    </logger>
+
+    <logger
+        name="java.sql.PreparedStatement"
+        additivity="false">
+        <level
+            value="${log.level}" />
+        <appender-ref
+            ref="CONSOLE" />
+        <appender-ref
+            ref="FILE" />
+    </logger>
+
+    <root>
+        <level
+            value="INFO" />
+        <appender-ref
+            ref="CONSOLE" />
+        <appender-ref
+            ref="FILE" />
+    </root>
+
+</log4j:configuration>
