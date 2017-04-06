@@ -19,7 +19,7 @@ import org.apache.poi.ss.util.CellRangeAddress;
 
 /**
  * 简单Excel工具类
- * @author LIYANG
+ * @author 
  *
  */
 public class SimpleExcelTool {
@@ -141,7 +141,7 @@ public class SimpleExcelTool {
         String[] value = {"姓名"+i,"身份证"+i,"手机号"+i,"性别"+i};
         values.add(value);
     }
-    HSSFWorkbook workbook = generateExcel("宸信征信报告","单位名称：XXXX公司","监控时间：20151101-20151130",titles, values);
+    HSSFWorkbook workbook = generateExcel("表格展示样例","单位名称：XXXX公司","监控时间：20161101-20161130",titles, values);
     workbook.write(new FileOutputStream(new File("D:/aa.xls")));
 }
 
