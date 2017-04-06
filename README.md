@@ -1,2 +1,8 @@
 # chenxinstart
-我在chenxin那些事
+public static void main(String[] args)
+{
+
+	System.out.println("Im comming");
+	
+	
+}
