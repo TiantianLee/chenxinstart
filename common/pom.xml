@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.com.chenxin</groupId>
+	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>common</artifactId>
+	<packaging>pom</packaging>
+	<repositories>  
+        <repository>  
+            <id>public_repository</id>  <!--这个ID需要与你新建的组group ID一致--> 
+            <name>Public Repository</name>   
+            <url>http://10.18.131.12:8081/nexus/content/groups/public/</url>   
+        </repository>  
+        <repository> 
+            <id>central</id> 
+            <name>Maven Repository Switchboard</name> 
+            <layout>default</layout> 
+            <url>http://repo1.maven.org/maven2</url> 
+        </repository> 
+    </repositories> 
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>release respsitory</name>
+			<url>http://10.18.131.12:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>snapshots respsitory</name>
+			<url>http://10.18.131.12:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<scm>
+        <url>https://192.168.0.28/svn/ccsp/trunk/code/common</url>
+        <connection>scm:svn:https://192.168.0.28/svn/ccsp/trunk/code/common</connection>
+        <developerConnection>scm:svn:https://192.168.0.28/svn/ccsp/trunk/code/common</developerConnection>
+    </scm>
+	<modules>
+		<module>utils</module>
+		<module>exception</module>
+		<module>ws-common</module>
+		<module>security-common</module>
+		<module>fastdfs-client</module>
+	</modules>
+</project>
+
