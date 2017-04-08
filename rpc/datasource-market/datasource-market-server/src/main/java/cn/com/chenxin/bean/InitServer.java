@@ -1,9 +1,4 @@
-﻿/**    
- * @author   
- * @date 2016年3月23日 上午11:28:15 
- * @version V1.0   
- */
-package cn.com.chenxin.bean;
+﻿package cn.com.chenxin.bean;
 
 import org.apache.thrift.TMultiplexedProcessor;
 import org.apache.thrift.server.TServer;
