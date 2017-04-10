@@ -1,9 +1,4 @@
-/**    
- * @author LIYANG  
- * @date 2016年4月25日 下午2:23:04 
- * @version V1.0   
- */
-package cn.com.chenxin.security;
+﻿package cn.com.chenxin.security;
 
 import java.io.IOException;
 import java.security.SecureRandom;
@@ -19,9 +14,6 @@ import sun.misc.BASE64Encoder;
 /**
  * Des 加密方法
  * 
- * @author LIYANG
- *
- * @since
  */
 public class DES_Encrypt {
 

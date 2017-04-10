@@ -1,11 +1,8 @@
-package cn.com.chenxin.exception;
+﻿package cn.com.chenxin.exception;
 
 /**
  * 业务处理异常，错误代码为200
  * 
- * @author LIYANG
- *
- * @since 0.0.1-SNAPSHOT
  */
 public class BusinessException extends ChenXinException {
 

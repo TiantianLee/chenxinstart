@@ -1,10 +1,7 @@
-package cn.com.chenxin.exception;
+﻿package cn.com.chenxin.exception;
 /**
  * 禁止异常，HTTP STATUS 403
  * 
- * @author LIYANG
- *
- * @since 0.0.1-SNAPSHOT
  */
 public class ForbiddenException extends ChenXinException {
 

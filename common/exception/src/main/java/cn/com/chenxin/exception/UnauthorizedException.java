@@ -1,10 +1,7 @@
-package cn.com.chenxin.exception;
+﻿package cn.com.chenxin.exception;
 /**
  * 未授权异常 错误代码401
  * 
- * @author LIYANG
- *
- * @since 0.0.1-SNAPSHOT
  */
 public class UnauthorizedException extends ChenXinException {
 

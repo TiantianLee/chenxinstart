@@ -1,10 +1,7 @@
-package cn.com.chenxin.exception;
+﻿package cn.com.chenxin.exception;
 /**
  * 内部错误异常，异常代码500
  * 
- * @author LIYANG
- *
- * @since 0.0.1-SNAPSHOT
  */
 public class InternalErrorException extends ChenXinException {
 

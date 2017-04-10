@@ -1,9 +1,4 @@
-/**    
- * @author LIYANG  
- * @date 2016年5月23日 下午4:16:41 
- * @version V1.0   
- */
-package cn.com.chenxin.client;
+﻿package cn.com.chenxin.client;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -21,12 +16,6 @@ import cn.com.chenxin.fastdfs.StorageServer;
 import cn.com.chenxin.fastdfs.TrackerClient;
 import cn.com.chenxin.fastdfs.TrackerServer;
 
-/**
- * 
- * @author LIYANG
- *
- * @since
- */
 public class FastDFSClient {
 
 

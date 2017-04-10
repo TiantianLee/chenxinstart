@@ -1,10 +1,7 @@
-package cn.com.chenxin.exception;
+﻿package cn.com.chenxin.exception;
 /**
  * NOT FOUND 异常 ，错误代码404
  * 
- * @author LIYANG
- *
- * @since 0.0.1-SNAPSHOT
  */
 public class NotFoundException extends ChenXinException {
 

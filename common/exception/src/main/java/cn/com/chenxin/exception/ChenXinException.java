@@ -1,10 +1,7 @@
-package cn.com.chenxin.exception;
+﻿package cn.com.chenxin.exception;
 /**
- * 宸信统一异常父类
+ * 异常父类
  * 
- * @author LIYANG
- *
- * @since 0.0.1-SNAPSHOT
  */
 public class ChenXinException extends Exception {
 
