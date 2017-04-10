@@ -83,7 +83,6 @@ public class SjzwscTestBatch {
         map.put("116","18734723578");
         map.put("20","13619155525");
         map.put("108","18392186485");
-        map.put("109","18392770666");
 
         
         
