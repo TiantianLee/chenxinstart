@@ -1,4 +1,4 @@
-package cn.com.chenxin.utils;
+﻿package cn.com.chenxin.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ import org.apache.poi.ss.util.CellRangeAddress;
 
 /**
  * 简单Excel工具类
- * @author 
+ * @author tiantain
  *
  */
 public class SimpleExcelTool {
