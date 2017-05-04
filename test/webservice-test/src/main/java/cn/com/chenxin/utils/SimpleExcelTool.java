@@ -19,7 +19,7 @@ import org.apache.poi.ss.util.CellRangeAddress;
 
 /**
  * 简单Excel工具类
- * @author tiantain
+ * @author Tiantain
  *
  */
 public class SimpleExcelTool {
